@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import { Todo } from "./Todo";
+import { TodoList } from "./TodoList";
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <Todo body="hello component!" />
+      <TodoList items={[
+        { id: 1, body: "test1" },
+        { id: 2, body: "test2" },
+      ]} />
     );
   }
 }
