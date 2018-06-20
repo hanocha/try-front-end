@@ -23,7 +23,7 @@ class App extends Component {
         console.log(this.state);
         this.setState({
           todos: response.data.map(todo => {
-            return ({ id: todo.id, body: todo.title });
+            return ({ id: todo.id, body: todo.text, title: todo.title });
           })
         })
       });

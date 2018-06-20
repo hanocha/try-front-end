@@ -3,7 +3,8 @@ import React from "react";
 export const Todo = props => {
   return (
     <div>
-      {props.body}
+      <p>{props.title}</p>
+      <p>{props.body}</p>
     </div>
   );
 };
